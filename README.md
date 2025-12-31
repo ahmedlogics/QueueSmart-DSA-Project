@@ -72,3 +72,10 @@ The backend logic relies on the following custom structures:
 ├── src/               # C++ Source Code (Backend Logic)
 ├── frontend/          # HTML, CSS, JS (User Interface)
 └── bin/               # Compiled Executable
+
+
+
+
+
+
+

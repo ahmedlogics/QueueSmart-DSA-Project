@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Queue - QueueSmart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="app-layout">
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><i class="fa-solid fa-layer-group"></i> QueueSmart</div>
+            <span>Token Management</span>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html" class="sidebar-link">Dashboard</a></li>
+            <li><a href="book.html" class="sidebar-link">Book Token</a></li>
+            <li><a href="payment.html" class="sidebar-link">Payment</a></li>
+            <li><a href="queue.html" class="sidebar-link active">Live Queue</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="../login.html" class="sidebar-link logout">Logout</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Live Queue Status</h2>
+            <p>Track your token position in real-time</p>
+        </header>
+
+        <section class="card your-token-status">
+            <div class="card-header">
+                <h3>Your Token Status</h3>
+                <span class="badge badge-live">Queue Updating live</span>
+            </div>
+            <div class="status-cards-grid">
+                <div class="status-card">
+                    <span>Token Number</span>
+                    <strong id="status-token">--</strong>
+                </div>
+                <div class="status-card">
+                    <span>Position</span>
+                    <strong id="status-position">--</strong>
+                </div>
+                <div class="status-card">
+                    <span>Estimated Wait</span>
+                    <strong id="status-wait">--</strong>
+                </div>
+                <div class="status-card">
+                    <span>Status</span>
+                    <strong id="status-text" class="status-wait">Not in Queue</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="card queue-filters">
+            <div class="form-group">
+                <label for="queue-department">Select Department</label>
+                <select id="queue-department" class="form-control">
+                    <option value="NADRA">NADRA</option>
+                    <option value="Passport">Passport Office</option>
+                    <option value="License">Driving License</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="queue-branch">Select Branch</label>
+                <select id="queue-branch" class="form-control">
+                    <option value="Gulshan">Gulshan</option>
+                    <option value="NorthNazimabad">North Nazimabad</option>
+                    <option value="NorthKarachi">North Karachi</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="card queue-table-card">
+            <h3 class="card-header">Current Tokens</h3>
+            <table class="queue-table">
+                <thead>
+                    <tr>
+                        <th>Token Number</th>
+                        <th>Category</th>
+                        <th>Booked Time</th>
+                        <th>Status</th>
+                        <th>Est. Wait</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="5">Loading Queue...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

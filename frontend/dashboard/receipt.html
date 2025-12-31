@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Receipt - QueueSmart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="app-layout">
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><i class="fa-solid fa-layer-group"></i> QueueSmart</div>
+            <span>Token Management</span>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html" class="sidebar-link">Dashboard</a></li>
+            <li><a href="book.html" class="sidebar-link">Book Token</a></li>
+            <li><a href="payment.html" class="sidebar-link">Payment</a></li>
+            <li><a href="receipt.html" class="sidebar-link active">Token Receipt</a></li>
+            <li><a href="queue.html" class="sidebar-link">Live Queue</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="../login.html" class="sidebar-link logout">Logout</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Token Receipt</h2>
+            <p>Your token has been confirmed successfully</p>
+        </header>
+
+        <div class="success-banner">
+            <strong>Payment Successful!</strong> Your token has been booked and confirmed.
+        </div>
+
+        <div class="receipt-container">
+            <div class="card token-receipt">
+                <div class="receipt-header">
+                    <h4>QueueSmart Official Token Receipt</h4>
+                    <span class="badge badge-confirmed">Confirmed</span>
+                </div>
+                <div class="receipt-body">
+                    <div class="receipt-token-id">
+                        <span>Your Token Number</span>
+                        <strong id="receipt-number">LOADING...</strong>
+                    </div>
+                    <div class="receipt-details-grid">
+                        <div class="receipt-detail">
+                            <span>Branch/Dept</span>
+                            <strong id="receipt-branch">...</strong>
+                        </div>
+                        <div class="receipt-detail">
+                            <span>Time Slot</span>
+                            <strong>10:00 AM</strong>
+                        </div>
+                        <div class="receipt-detail">
+                            <span>Category</span>
+                            <strong id="receipt-category">...</strong>
+                        </div>
+                        <div class="receipt-detail">
+                            <span>Date</span>
+                            <strong id="receipt-date">...</strong>
+                        </div>
+                        <div class="receipt-detail">
+                            <span>Payment Status</span>
+                            <strong style="color: green;">PAID</strong>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="receipt-payment-details">
+                        <h4>Payment Details</h4>
+                        <div class="summary-item">
+                            <span>Service Fee:</span>
+                            <span>PKR 500</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total Paid:</span>
+                            <strong>PKR 500</strong>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="receipt-qr-code">
+                        <h4>Scan QR Code at Counter</h4>
+                        <i class="fa-solid fa-qrcode" style="font-size: 5rem;"></i>
+                        <p>Present this code at the service counter</p>
+                    </div>
+                </div>
+                <div class="receipt-actions">
+                    <button class="btn btn-primary" onclick="window.print()">Download/Print Receipt</button>
+                    <a href="queue.html" class="btn btn-secondary">Continue to Queue</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - QueueSmart</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="app-layout">
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">QueueSmart</div>
+            <span>Token Management</span>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html" class="sidebar-link active">Dashboard</a></li>
+            <li><a href="book.html" class="sidebar-link">Book Token</a></li>
+            <li><a href="payment.html" class="sidebar-link">Payment</a></li>
+            <li><a href="receipt.html" class="sidebar-link">Token Receipt</a></li>
+            <li><a href="queue.html" class="sidebar-link">Queue</a></li>
+            <li><a href="profile.html" class="sidebar-link">Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="../login.html" class="sidebar-link logout">Logout</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Welcome back, ahmed.studies15! 👋</h2>
+            <p>Here's what's happening with your tokens today</p>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <span>Total Booked Tokens</span>
+                    <div class="stat-icon icon-blue">Σ</div>
+                </div>
+                <h3>24</h3>
+                <p class="stat-meta">+3 this month</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <span>Pending Tokens</span>
+                    <div class="stat-icon icon-orange">⏱</div>
+                </div>
+                <h3>2</h3>
+                <p class="stat-meta">Active now</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <span>Completed Tokens</span>
+                    <div class="stat-icon icon-green">✓</div>
+                </div>
+                <h3>22</h3>
+                <p class="stat-meta">91% success rate</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <span>Total Spending</span>
+                    <div class="stat-icon icon-purple">📈</div>
+                </div>
+                <h3>$480</h3>
+                <p class="stat-meta">This year</p>
+            </div>
+        </section>
+
+        <section class="action-buttons">
+            <a href="book.html" class="btn btn-primary">Book New Token</a>
+            <a href="queue.html" class="btn btn-secondary">View Queue</a>
+            <a href="#" class="btn btn-secondary">Payment History</a>
+        </section>
+
+        <section class="recent-tokens card">
+            <h3 class="card-header">Recent Tokens</h3>
+            <div class="token-list">
+                <div class="token-item">
+                    <div class="token-id">TK-2501</div>
+                    <div class="token-details">
+                        <h4>NADRA</h4>
+                        <p>North Karachi <span>2025-11-02 @ 10:00 AM</span></p>
+                    </div>
+                    <div class="token-status">
+                        <span class="badge badge-pending">Pending</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">View Details</a>
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

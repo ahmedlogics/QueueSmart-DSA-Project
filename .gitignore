@@ -1,0 +1,22 @@
+
+# Prerequisites
+*.d
+*.obj
+*.exe
+*.o
+*.pdb
+*.idb
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Build folders
+bin/
+build/
+out/
